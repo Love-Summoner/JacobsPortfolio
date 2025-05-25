@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>  
+
+    <head>  
+        <title> Jacob Truelove</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Jacob Truelove's portfolio">
+        <meta name="keywords" content="Jacob Truelove, portfolio">
+        <meta name="author" content="Jacob Truelove">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="60">
+    </head>
+
+        <style>
+            html,
+            body{
+                color: #9cf7dc;
+                margin: 0;
+            }
+            .banner{
+                background: #262c3b;
+            }
+            .banner__content{
+                padding: 16px;
+                max-width: fit-content;
+                margin: 0 auto;
+                display: flex;
+            }
+            .banner__text{
+                line-height: 1;
+                font-family: "Quicksand", sans-serif;
+            }
+        </style>
+        <body style="background-image: linear-gradient(to bottom right ,#151821, darkgrey);">  
+            <div class="banner">
+                <div class="banner__content">
+                    <div class="banner__text">
+                        <h1>Jacob Truelove</h1>
+                    </div>
+                    <div class="banner__tabs">
+                        <table>
+                            <tr>
+                                <th width = "100"><button>Home</button></th>
+                                <th width = "100"><button>Projects</button></th>
+                                <th width = "100"><button>Resume</button></th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <center>
+            <h1>Hello friend</h1>
+            <hr>
+            <!--This is the comment syntax-->
+            <p id = "test" style="background-color: #402f2f;"> <span style="color: azure;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span> Doloremque deleniti et nemo quaerat optio, magnam obcaecati, veritatis saepe assumenda quod, officiis iusto totam illo voluptas. Iste distinctio maxime modi sapiente.</p>
+            <a href="https://www.youtube.com" target="_blank" title="youtube home page"> youtube link</a>
+            <br>
+            <a href="https://www.youtube.com/watch?v=KlTNKOnfXFk" target="_blank">
+            <img src="images/Really.png" width="500" height="100" alt="This is a stretched picture of a dog" title="picture of a dog">
+            </a>
+            <br>
+            
+
+            <button onclick="switchIframe()">
+                click me
+            </button>
+
+            <h1>Element Data</h1>
+            <table bgcolor = "black" width = "400">
+                <tr bgcolor = "grey" align="center">
+                    <th width = "100">element</th>
+                    <th width = "100">damage type</th>
+                    <th width = "100">spell</th>
+                    <th width = "100">special effect</th>
+                </tr>    
+                <tr bgcolor = "lightgrey" align="center">
+                    <td>fire</td>
+                    <td>fire type</td>
+                    <td>fire ball</td>
+                    <td>burn</td>
+                </tr>            
+            </table>
+            <iframe id="frame" src="page1.html" style="border: 0;"></iframe>
+            <script>
+                function switchIframe(){
+                    document.getElementById("test").innerHTML = "these words are too long";
+                    if(document.getElementById("frame").src != "page1.html"){
+                        document.getElementById("frame").src = "page2.html";
+                    }
+                    else{
+                        document.getElementById("frame").src = "page1.html";
+                    }
+                }
+            </script>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </center>
+        </body>
+    
+
+</html>
