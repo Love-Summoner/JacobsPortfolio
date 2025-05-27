@@ -41,9 +41,9 @@
                     <div class="banner__tabs">
                         <table>
                             <tr>
-                                <th width = "100"><button>Home</button></th>
-                                <th width = "100"><button>Projects</button></th>
-                                <th width = "100"><button>Resume</button></th>
+                                <th width = "200"><button onclick = "location.href= 'index.html';">Home</button></th>
+                                <th width = "200"><button onclick="projects()">Projects</button></th>
+                                <th width = "200"><button>Resume</button></th>
                             </tr>
                         </table>
                     </div>
@@ -83,16 +83,7 @@
             </table>
             <br>
             <iframe id="frame" src="page1.html" style="border: 0;"></iframe>
-            <script>
-                function switchIframe(){
-                    document.getElementById("test").innerHTML = "these words are too long";
-                    if(document.getElementById("frame").src != "page1.html"){
-                        document.getElementById("frame").src = "page2.html";
-                    }
-                    else{
-                        document.getElementById("frame").src = "page1.html";
-                    }
-                }
+            <script src="test.js">
             </script>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </center>
