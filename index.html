@@ -11,27 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="refresh" content="60">
     </head>
-
-        <style>
-            html,
-            body{
-                color: #9cf7dc;
-                margin: 0;
-            }
-            .banner{
-                background: #262c3b;
-            }
-            .banner__content{
-                padding: 16px;
-                max-width: fit-content;
-                margin: 0 auto;
-                display: flex;
-            }
-            .banner__text{
-                line-height: 1;
-                font-family: "Quicksand", sans-serif;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
         <body style="background-image: linear-gradient(to bottom right ,#151821, darkgrey);">  
             <div class="banner">
                 <div class="banner__content">
@@ -39,11 +19,11 @@
                         <h1>Jacob Truelove</h1>
                     </div>
                     <div class="banner__tabs">
-                        <table>
-                            <tr>
+                        <table id="magicTable">
+                            <tr bgcolor = "grey">
                                 <th width = "200"><button onclick = "location.href= 'index.html';">Home</button></th>
                                 <th width = "200"><button onclick="projects()">Projects</button></th>
-                                <th width = "200"><button>Resume</button></th>
+                                <th width = "200"><button onclick = "location.href= 'Resume.html';">Resume</button></th>
                             </tr>
                         </table>
                     </div>
@@ -67,7 +47,7 @@
             </button>
 
             <h1>Element Data</h1>
-            <table bgcolor = "black" width = "400">
+            <table id="magicTable" bgcolor = "black" width = "400">
                 <tr bgcolor = "grey" align="center">
                     <th width = "100">element</th>
                     <th width = "100">damage type</th>
@@ -85,7 +65,6 @@
             <iframe id="frame" src="page1.html" style="border: 0;"></iframe>
             <script src="test.js">
             </script>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </center>
         </body>
     
